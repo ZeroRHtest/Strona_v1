@@ -1,3 +1,13 @@
 /*    font-family: 'Dosis', sans-serif;
 
     font-family: 'Raleway', sans-serif;*/
+
+html {
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(41, 39, 39);
+    
+}
