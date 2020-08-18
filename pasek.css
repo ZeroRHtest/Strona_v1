@@ -1,0 +1,17 @@
+div.pasek{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+}
+
+@media (max-width: 950px){
+    div.pasek{
+        visibility: hidden;
+        height: 0;
+    }
+   
+        
+    }
+}
+

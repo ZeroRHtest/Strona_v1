@@ -1,0 +1,34 @@
+
+.page { 
+    background: rgb(255, 255, 255);
+    max-width: 1440px;
+    margin: auto;
+    font-family: Roboto;
+    }
+
+.root {
+    
+    display: grid;
+    
+    height: 100vh;    
+    
+
+   
+}
+
+.header {
+    display: flex;
+    background: rgb(255, 255, 255);
+}
+.pasek{
+    background: rgb(160, 160, 160);;
+    height: 82px;
+    
+}
+.content{
+    background: rgb(116, 116, 116);
+}
+
+.footer{
+    background: rgb(65, 65, 65);
+}
