@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .header{
     position: static;
     max-width: 1440px;
@@ -20,14 +25,7 @@
     text-decoration: none;
     color: black;
 }
-.logo_header {
-    position: fixed;
-   padding: 0 80px;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-    font-size: 30px;
-}
+
 .logo_header a{
     padding-left: 20px;
 }
@@ -42,8 +40,8 @@
     padding-bottom: 10px;
 }
 .menu_header a:hover{
-    border-bottom:  solid 10px rgb(223, 0, 0);
-    transition: 0.5s;
+    border-bottom:  solid 4px rgb(223, 0, 0);
+    transition: 0.2s;
     
     
 }
@@ -75,50 +73,60 @@
 
 @media (max-width: 1440px){
     .logo_header {
+        position: fixed;
+       padding: 0 80px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        font-size: 30px;
+    }
+    .logo_header {
         
         padding-left: 0px;
      }
      .media_header{
-        padding-right: 0px;
+    padding-right: 0px;
     }
 }
 @media (max-width: 950px){
+    .header{
+        justify-content: space-between;
+    }
     .op{
-        visibility: hidden;
+       display: none;
     }
     .logo_header {
-        
+        position: static;
        
+    }
+     .nav-icon{
+        width: 70px;
+        cursor: pointer;
      }
-     .nav-icon {
-        padding-right: 40px;
-        width: 40px;
-        
-      }
-    .nav-icon:after, 
-    .nav-icon:before, 
-    .nav-icon div {
-      background-color: rgb(144, 37, 37);
-      border-radius: 3px;
-      content: '';
-      display: block;
-      height: 5px;
-      margin: 7px 0;
-      transition: all .2s ease-in-out;
-      
-      
-    }
-    .nav-icon:hover:before {
-      transform: translateY(12px) rotate(135deg);
-    }
     
-    .nav-icon:hover:after {
-      transform: translateY(-12px) rotate(-135deg);
-    }
-    
-    .nav-icon:hover div {
-      transform: scale(0);
-    }
+     .nav-icon:before,
+     .nav-icon:after, 
+     .nav-icon div{
+
+        background-color: rgb(0, 0, 0);      
+        border-radius:3px;
+        content: '';
+        display: block;
+        height: 5px;
+        width: 50px;
+        margin: 7px 0;
+
+        transition: all ease-in-out .2s;
+     }
+     .nav-icon:hover:before{
+        transform: translateY(12px) rotate(-135deg);
+     }
+     .nav-icon:hover::after{
+     transform: translateY(-12px) rotate(135deg);
+  }
+     .nav-icon:hover div {
+         scale:0
+     }
       
       
 }
