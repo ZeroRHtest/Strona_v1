@@ -32,9 +32,6 @@
 
 
 
-.menu_header{ 
-    
-}
 .menu_header a{
     
     padding-bottom: 10px;
@@ -68,8 +65,7 @@
     padding: 0 5px;
 }
 
-.op {
-}
+
 
 @media (max-width: 1440px){
     .logo_header {
